@@ -1,0 +1,1041 @@
+<!DOCTYPE html>    
+<html lang="fr">    
+<head>    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Waa Celtiis - Offre Spéciale 1 Go Gratuit</title>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+    <style>    
+        :root {    
+            --celtiis-blue: #002F5F;    
+            --celtiis-green: #00A859;    
+            --celtiis-dark-green: #008749;    
+            --celtiis-white: #FFFFFF;    
+            --celtiis-light: #f8f9fa;    
+            --celtiis-dark: #333;    
+            --celtiis-gradient: linear-gradient(135deg, var(--celtiis-blue) 0%, #001a36 100%);    
+        }    
+            
+        * {    
+            margin: 0;    
+            padding: 0;    
+            box-sizing: border-box;    
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+        }    
+    
+        body {    
+            background-color: var(--celtiis-light);    
+            color: #333;    
+            line-height: 1.6;    
+        }    
+    
+        .container {    
+            max-width: 1200px;    
+            margin: 0 auto;    
+            padding: 0 20px;    
+        }    
+    
+        /* Header */    
+        header {    
+            background: var(--celtiis-gradient);    
+            padding: 15px 0;    
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);    
+            position: sticky;    
+            top: 0;    
+            z-index: 100;    
+        }    
+    
+        .header-content {    
+            display: flex;    
+            justify-content: space-between;    
+            align-items: center;    
+        }    
+    
+        .logo {    
+            border: 1px solid white;  
+            margin-right: auto;  
+            padding-left: 10px;  
+            border-radius: 12px;  
+            display: flex;    
+            align-items: center;    
+        }    
+    
+        .logo img {    
+            height: 50px;    
+            margin-right: 10px;    
+        }    
+    
+        nav ul {    
+            display: flex;    
+            list-style: none;    
+        }    
+    
+        nav ul li {    
+            margin-left: 25px;    
+        }    
+    
+        nav ul li a {    
+            color: var(--celtiis-white);    
+            text-decoration: none;    
+            font-weight: 500;    
+            transition: all 0.3s ease;    
+            font-size: 16px;    
+        }    
+    
+        nav ul li a:hover {    
+            color: var(--celtiis-green);    
+        }    
+            
+        /* Menu Hamburger */    
+.hamburger-menu {    
+    position: absolute;    
+    top: 20px;    
+    right: 20px;    
+    z-index: 101;    
+}    
+    
+#menu-toggle {    
+    opacity: 0;    
+    position: absolute;    
+    right: 0;    
+}    
+    
+#menu-toggle:checked ~ .menu-btn > span {    
+    transform: rotate(45deg);    
+    background: var(--celtiis-white);    
+}    
+#menu-toggle:checked ~ .menu-btn > span::before {    
+    top: 0;    
+    transform: rotate(0);    
+    background: var(--celtiis-white);    
+}    
+#menu-toggle:checked ~ .menu-btn > span::after {    
+    top: 0;    
+    transform: rotate(90deg);    
+    background: var(--celtiis-white);    
+}    
+    
+.menu-btn {    
+    display: flex;    
+    align-items: center;    
+    position: fixed;    
+    top: 25px;    
+    right: 20px;    
+    width: 26px;    
+    height: 26px;    
+    cursor: pointer;    
+    z-index: 102;    
+}    
+    
+.menu-btn > span,    
+.menu-btn > span::before,    
+.menu-btn > span::after {    
+    display: block;    
+    position: absolute;    
+    width: 100%;    
+    height: 3px;    
+    background-color: var(--celtiis-white);    
+    transition-duration: .25s;    
+    border-radius: 2px;    
+}    
+.menu-btn > span::before {    
+    content: '';    
+    top: -8px;    
+}    
+.menu-btn > span::after {    
+    content: '';    
+    top: 8px;    
+}    
+    
+.menu-box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    padding: 100px 0;
+    list-style: none;
+    background-color: var(--celtiis-blue);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition: right 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    z-index: 100;
+}
+
+#menu-toggle:checked ~ .menu-box {
+    visibility: visible;
+    right: 0;
+    opacity: 1;
+}
+    
+.menu-box ul {    
+    display: flex;    
+    flex-direction: column;    
+    padding: 0 30px;    
+}    
+    
+.menu-box ul li {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 1s ease;
+}
+
+#menu-toggle:checked ~ .menu-box ul li {
+    opacity: 1;
+    transform: translateX(0);
+}
+    
+.menu-box ul li a {    
+    color: var(--celtiis-white);    
+    text-decoration: none;    
+    font-weight: 500;    
+    font-size: 18px;    
+    transition: all 0.3s ease;    
+    display: block;    
+}    
+    
+.menu-box ul li a:hover {    
+    color: var(--celtiis-green);    
+    padding-left: 10px;    
+}    
+    
+        /* Hero Section */    
+        .hero {    
+            padding: 100px 0;    
+            background: var(--celtiis-gradient);    
+            color: white;    
+            text-align: center;    
+            position: relative;    
+            overflow: hidden;    
+        }    
+            
+        .hero-content {    
+    display: flex;    
+    justify-content: center;    
+    align-items: center;    
+    gap: 50px;    
+    flex-wrap: wrap;    
+    position: relative;    
+    z-index: 2;    
+}    
+    
+.hero-text {    
+    max-width: 600px;    
+    text-align: left;    
+}    
+    
+.hero-image img {    
+    max-width: 400px;    
+    width: 100%;    
+    border-radius: 20px;    
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);    
+}    
+    
+/* Responsive */    
+@media (max-width: 768px) {    
+‎    .header-content {    
+‎        flex-direction: row;    
+‎        text-align: left;    
+‎    }    
+    nav ul {    
+‎        display: none;    
+‎    }    
+    .logo {    
+‎        margin-right: 0;    
+‎    }    
+    .hero-text {    
+        text-align: center;    
+    }    
+    .hero-image img {    
+        max-width: 300px;    
+        margin: 20px auto 0;    
+    }    
+}    
+    
+        .hero::before {    
+            content: '';    
+            position: absolute;    
+            top: 0;    
+            left: 0;    
+            width: 100%;    
+            height: 100%;    
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%2300A859" fill-opacity="0.1" d="M0,128L48,117.3C96,107,192,85,288,112C384,139,480,213,576,218.7C672,224,768,160,864,138.7C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;    
+            background-size: cover;    
+        }    
+    
+            
+    
+        .hero h1 {    
+            font-size: 3.5rem;    
+            margin-bottom: 20px;    
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);    
+        }    
+    
+        .hero p {    
+            font-size: 1.5rem;    
+            margin-bottom: 30px;    
+        }    
+    
+        .highlight {    
+            color: var(--celtiis-green);    
+            font-weight: bold;    
+        }    
+    
+        .cta-button {    
+            display: inline-block;    
+            padding: 15px 40px;    
+            background: var(--celtiis-green);    
+            color: white;    
+            border: none;    
+            border-radius: 30px;    
+            font-size: 1.2rem;    
+            font-weight: bold;    
+            cursor: pointer;    
+            transition: all 0.3s ease;    
+            box-shadow: 0 4px 15px rgba(0, 168, 89, 0.4);    
+            text-decoration: none;    
+            text-transform: uppercase;    
+            letter-spacing: 1px;    
+        }    
+    
+        .cta-button:hover {    
+            transform: translateY(-3px);    
+            box-shadow: 0 6px 20px rgba(0, 168, 89, 0.6);    
+            background: var(--celtiis-dark-green);    
+        }    
+    
+        /* Features */    
+        .features {    
+            padding: 80px 0;    
+            background: white;    
+        }    
+    
+        .section-title {    
+            text-align: center;    
+            margin-bottom: 60px;    
+            color: var(--celtiis-blue);    
+            font-size: 2.5rem;    
+            position: relative;    
+        }    
+    
+        .section-title:after {    
+            content: '';    
+            display: block;    
+            width: 80px;    
+            height: 4px;    
+            background: var(--celtiis-green);    
+            margin: 15px auto;    
+            border-radius: 2px;    
+        }    
+    
+        .features-grid {    
+            display: grid;    
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
+            gap: 30px;    
+        }    
+    
+        .feature-card {    
+            background: var(--celtiis-light);    
+            border-radius: 10px;    
+            padding: 30px;    
+            text-align: center;    
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);    
+            transition: all 0.3s ease;    
+            border-top: 4px solid var(--celtiis-blue);    
+        }    
+    
+        .feature-card:hover {    
+            transform: translateY(-10px);    
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);    
+        }    
+    
+        .feature-icon {    
+            font-size: 3rem;    
+            margin-bottom: 20px;    
+            color: var(--celtiis-blue);    
+        }    
+    
+        .feature-card h3 {    
+            margin-bottom: 15px;    
+            color: var(--celtiis-blue);    
+        }    
+    
+        /* Offer Section */    
+        .offer {    
+            padding: 100px 0;    
+            background: var(--celtiis-gradient);    
+            color: white;    
+            text-align: center;    
+        }    
+    
+        .offer-content {    
+            max-width: 800px;    
+            margin: 0 auto;    
+        }    
+    
+        .offer h2 {    
+            font-size: 2.5rem;    
+            margin-bottom: 20px;    
+        }    
+    
+        .countdown {    
+            display: flex;    
+            justify-content: center;    
+            margin: 40px 0;    
+        }    
+    
+        .countdown-item {    
+            margin: 0 15px;    
+            background: rgba(255, 255, 255, 0.15);    
+            border-radius: 10px;    
+            padding: 20px;    
+            min-width: 100px;    
+            backdrop-filter: blur(5px);    
+        }    
+    
+        .countdown-number {    
+            font-size: 2.5rem;    
+            font-weight: bold;    
+            margin-bottom: 5px;    
+        }    
+    
+        .countdown-label {    
+            font-size: 0.9rem;    
+            text-transform: uppercase;    
+            letter-spacing: 1px;    
+        }    
+    
+        /* App Preview */    
+        .app-preview {    
+            padding: 80px 0;    
+            background: white;    
+        }    
+    
+        .preview-content {    
+            display: flex;    
+            align-items: center;    
+            justify-content: space-between;    
+            flex-wrap: wrap;    
+        }    
+    
+        .preview-text {    
+            flex: 1;    
+            min-width: 300px;    
+            padding-right: 30px;    
+        }    
+    
+        .data-amount {    
+            font-size: 3rem;    
+            font-weight: bold;    
+            color: var(--celtiis-blue);    
+            margin: 10px 0;    
+        }    
+          
+        /* Carousel Styles */  
+.carousel-container {  
+    width: 65%;  
+    max-width: 400px;
+    position: relative;  
+    margin: 30px auto;  
+    overflow: hidden;  
+    border-radius: 20px;  
+    background-color: transparent;
+}  
+  
+.carousel-slides {  
+    touch-action: pan-y;
+    display: flex;  
+    transition: transform 0.5s ease-in-out;  
+}  
+  
+.carousel-slide {  
+    min-width: 100%;  
+}  
+  
+.carousel-slide img {  
+    width: 100%;  
+    display: block;  
+}  
+  
+.carousel-dots {  
+    display: flex;  
+    justify-content: center;  
+    margin-top: 15px;  
+}  
+  
+.carousel-dot {  
+    width: 10px;  
+    height: 10px;  
+    border-radius: 50%;  
+    background-color: rgba(0, 47, 95, 0.3);
+    margin: 0 5px;  
+    cursor: pointer;  
+    transition: background-color 0.3s ease;  
+}  
+  
+.carousel-dot.active {  
+    background-color: var(--celtiis-blue);  
+}  
+    
+        /* Footer */    
+        footer {    
+            background: var(--celtiis-blue);    
+            color: white;    
+            padding: 60px 0 30px;    
+        }    
+    
+        .footer-content {    
+            display: grid;    
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    
+            gap: 30px;    
+            margin-bottom: 40px;    
+        }    
+    
+        .footer-column h3 {    
+            color: var(--celtiis-green);    
+            margin-bottom: 20px;    
+            font-size: 1.2rem;    
+        }    
+    
+        .footer-column ul {    
+            list-style: none;    
+        }    
+    
+        .footer-column ul li {    
+            margin-bottom: 10px;    
+        }    
+    
+        .footer-column ul li a {    
+            color: #ddd;    
+            text-decoration: none;    
+            transition: all 0.3s ease;    
+        }    
+    
+        .footer-column ul li a:hover {    
+            color: var(--celtiis-green);    
+        }    
+    
+        .social-icons {    
+            display: flex;    
+            gap: 15px;    
+            margin-top: 20px;    
+        }    
+    
+        .social-icons a {    
+            display: inline-flex;    
+            align-items: center;    
+            justify-content: center;    
+            width: 40px;    
+            height: 40px;    
+            background: rgba(255, 255, 255, 0.1);    
+            border-radius: 50%;    
+            color: white;    
+            transition: all 0.3s ease;    
+        }    
+    
+        .social-icons a:hover {    
+            background: var(--celtiis-green);    
+            transform: translateY(-3px);    
+        }    
+    
+        .copyright {    
+            text-align: center;    
+            padding-top: 30px;    
+            border-top: 1px solid rgba(255, 255, 255, 0.1);    
+            color: #aaa;    
+            font-size: 0.9rem;    
+        }    
+    
+        /* Responsive */    
+        @media (max-width: 768px) {    
+            .header-content {    
+                flex-direction: column;    
+                text-align: center;    
+            }    
+    
+            nav ul {    
+                margin-top: 20px;    
+                justify-content: center;    
+                flex-wrap: wrap;    
+            }    
+    
+            nav ul li {    
+                margin: 5px 10px;    
+            }    
+    
+            .hero h1 {    
+                font-size: 2.5rem;    
+            }    
+    
+            .hero p {    
+                font-size: 1.2rem;    
+            }    
+    
+            .countdown-item {    
+                margin: 0 5px;    
+                min-width: 70px;    
+                padding: 15px 10px;    
+            }    
+    
+            .countdown-number {    
+                font-size: 1.8rem;    
+            }    
+    
+            .preview-content {    
+                flex-direction: column;    
+            }    
+    
+            .preview-text {    
+                padding-right: 0;    
+                margin-bottom: 30px;    
+            }    
+                   
+        }    
+    
+        /* Animation */    
+        @keyframes pulse {    
+            0% { transform: scale(1); }    
+            50% { transform: scale(1.05); }    
+            100% { transform: scale(1); }    
+        }    
+    
+        .pulse {    
+            animation: pulse 2s infinite;    
+        }    
+            
+        .feature-card {    
+    will-change: transform, opacity;    
+}    
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Splash Screen */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Même dégradé que le header */
+    background: var(--celtiis-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.splash-logo {
+    width: 150px;
+    animation: splash-anim 1.5s ease-in-out forwards;
+}
+
+@keyframes splash-anim {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2) rotate(180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+    </style>    
+</head>    
+<body>    
+    
+    <!-- Splash Screen -->
+<div id="splash-screen">
+    <img src="logo2.png" alt="Celtiis Logo" class="splash-logo">
+</div>
+
+    <!-- Header -->    
+    <header>    
+    <div class="container">    
+        <div class="header-content">    
+            <div class="logo">    
+                <img src="logo2.png" alt="Celtiis Logo">    
+                  
+            </div>    
+                
+            <!-- Remplacer la nav existante par ce code -->    
+            <div class="hamburger-menu">    
+                <input id="menu-toggle" type="checkbox" />    
+                <label class="menu-btn" for="menu-toggle">    
+                    <span></span>    
+                </label>    
+                    
+                <nav class="menu-box">    
+                    <ul>    
+                        <li><a href="index.html">Accueil</a></li>    
+                        <li><a href="redirect.html">Téléchargements</a></li>    
+                        <li><a href="#">Services</a></li>    
+                        <li><a href="#">À propos</a></li>    
+                        <li><a href="#">Contact</a></li>    
+                    </ul>    
+                </nav>    
+            </div>    
+        </div>    
+    </div>    
+</header>    
+    
+    <!-- Hero Section -->    
+    <section class="hero">    
+        <div class="container">    
+            <div class="hero-content">    
+    <div class="hero-text fade-in">    
+        <h1>1 Go de <span class="highlight">Bonus Gratuit</span></h1>    
+        <p>Téléchargez l'application Waa Celtiis et profitez de <strong>1 Go gratuit</strong> valable pendant 48h !</p>    
+        <a href="redirect.html" class="cta-button pulse">Télécharger maintenant</a>    
+    </div>    
+    <div class="hero-image fade-in">    
+        <img src="pic.png" alt="Fille en joie" />    
+    </div>    
+</div>    
+            </div>    
+        </div>    
+    </section>    
+    
+    <!-- Features -->    
+    <section class="features">    
+        <div class="container">    
+            <h2 class="section-title">Pourquoi choisir Waa Celtiis ?</h2>    
+            <div class="features-grid">    
+                <div class="feature-card">    
+                    <div class="feature-icon">    
+                        <i class="fas fa-bolt"></i>    
+                    </div>    
+                    <h3>Réseau Ultra Rapide</h3>    
+                    <p>Profitez d'une connexion 4G+ à très haut débit partout au Bénin avec la meilleure couverture.</p>    
+                </div>    
+                <div class="feature-card">    
+                    <div class="feature-icon">    
+                        <i class="fas fa-money-bill-wave"></i>    
+                    </div>    
+                    <h3>Tarifs Compétitifs</h3>    
+                    <p>Des forfaits adaptés à tous les besoins et à toutes les bourses. Le meilleur rapport qualité-prix.</p>    
+                </div>    
+                <div class="feature-card">    
+                    <div class="feature-icon">    
+                        <i class="fas fa-headset"></i>    
+                    </div>    
+                    <h3>Support 24/7</h3>    
+                    <p>Notre équipe est disponible à tout moment pour vous accompagner et résoudre vos problèmes.</p>    
+                </div>    
+            </div>    
+        </div>    
+    </section>    
+    
+    <!-- Offer Section -->    
+    <section class="offer">    
+        <div class="container">    
+            <div class="offer-content">    
+                <h2>Offre spéciale limitée !</h2>    
+                <p>Profitez de 1 Go de data gratuit dès maintenant en téléchargeant l'application Waa Celtiis. Cette offre est valable pendant 48h seulement.</p>    
+                    
+                <div class="countdown">    
+    <div class="countdown-item">    
+        <div class="countdown-number" id="hours">48</div>    
+        <div class="countdown-label">Heures</div>    
+    </div>    
+    <div class="countdown-item">    
+        <div class="countdown-number" id="minutes">00</div>    
+        <div class="countdown-label">Minute</div>    
+    </div>    
+    <div class="countdown-item">    
+        <div class="countdown-number" id="seconds">00</div>    
+        <div class="countdown-label">Seconde</div>    
+    </div>    
+</div>    
+                    
+                <a href="redirect.html" class="cta-button">Obtenir mon bonus</a>    
+            </div>    
+        </div>    
+    </section>    
+    
+    <!-- App Preview -->  
+<section class="app-preview">  
+    <div class="container">  
+        <h2 class="section-title">Découvrez l'application</h2>  
+        <div class="preview-content">  
+            <div class="preview-text">  
+                <h3>Une application intuitive et puissante</h3>  
+                <p>Gérez facilement votre forfait, achetez des data, appelez à l'étranger à moindre coût et bien plus encore.</p>  
+                <p>L'application Waa Celtiis vous donne un contrôle total sur votre consommation et vos dépenses.</p>  
+                <ul style="list-style: none; margin: 20px 0;">  
+                    <li><i class="fas fa-check-circle" style="color: var(--celtiis-green);"></i> Suivi en temps réel de votre consommation</li>  
+                    <li><i class="fas fa-check-circle" style="color: var(--celtiis-green);"></i> Recharge facile et sécurisée</li>  
+                    <li><i class="fas fa-check-circle" style="color: var(--celtiis-green);"></i> Notifications pour ne jamais être à court</li>  
+                    <li><i class="fas fa-check-circle" style="color: var(--celtiis-green);"></i> Services et promotions exclusives</li>  
+                </ul>  
+            </div>  
+        </div>  
+    </div>  
+
+    <div class="carousel-container">  
+        <div class="carousel-slides">  
+            <div class="carousel-slide">  
+                <img src="capture1.png" alt="Capture d'écran 1 de l'application Waa Celtiis">  
+            </div>  
+            <div class="carousel-slide">  
+                <img src="capture2.png" alt="Capture d'écran 2 de l'application Waa Celtiis">  
+            </div>  
+            <div class="carousel-slide">  
+                <img src="capture3.png" alt="Capture d'écran 3 de l'application Waa Celtiis">  
+            </div>  
+        </div>  
+
+        <div class="carousel-dots">  
+            <div class="carousel-dot active"></div>  
+            <div class="carousel-dot"></div>  
+            <div class="carousel-dot"></div>  
+        </div>
+    </div>  
+</section>
+        
+    <!-- Footer -->    
+    <footer>    
+        <div class="container">    
+            <div class="footer-content">    
+                <div class="footer-column">    
+                    <h3>Waa Celtiis</h3>    
+                    <p>L'application qui vous connecte à l'essentiel, partout au Bénin.</p>    
+                    <div class="social-icons">    
+                        <a href="https://www.facebook.com/CeltiisBenin"><i class="fab fa-facebook-f"></i></a>    
+                        <a href="#"><i class="fab fa-twitter"></i></a>    
+                        <a href="#"><i class="fab fa-instagram"></i></a>    
+                        <a href="#"><i class="fab fa-youtube"></i></a>    
+                    </div>    
+                </div>    
+                <div class="footer-column">    
+                    <h3>Liens rapides</h3>    
+                    <ul>    
+                        <li><a href="index.html">Accueil</a></li>    
+                        <li><a href="#">Forfaits</a></li>    
+                        <li><a href="#">Services</a></li>    
+                        <li><a href="#">Couverture</a></li>    
+                        <li><a href="#">Points de vente</a></li>    
+                    </ul>    
+                </div>    
+                <div class="footer-column">    
+                    <h3>Support</h3>    
+                    <ul>    
+                        <li><a href="#">FAQ</a></li>    
+                        <li><a href="#">Contacter le support</a></li>    
+                        <li><a href="#">Guide d'utilisation</a></li>    
+                        <li><a href="#">État du réseau</a></li>    
+                    </ul>    
+                </div>    
+                <div class="footer-column">    
+                    <h3>Contact</h3>    
+                    <ul>    
+                        <li><i class="fas fa-phone"></i> 01 40 40 40 40</li>    
+                      <li><i class="fas fa-envelope"></i> contact@waaceltiis.bj</li>    
+                    <li><i class="fas fa-map-marker-alt"></i> Cotonou, Bénin</li>    
+                    </ul>    
+                </div>    
+            </div>    
+            <div class="copyright">    
+                <p>&copy; 2025 Waa Celtiis - Tous droits réservés</p>    
+            </div>    
+        </div>    
+    </footer>    
+    
+    <script>
+// ---------- Compte à rebours ----------
+const countdownKey = 'waaceltiisCountdown';
+let target = localStorage.getItem(countdownKey);
+if (!target) {
+    const now = new Date();
+    target = new Date(now.getTime() + 48*60*60*1000); // 48h à partir d'aujourd'hui
+    localStorage.setItem(countdownKey, target);
+} else {
+    target = new Date(target);
+}
+
+function updateCountdown() {
+    document.getElementById('hours').textContent = '48';
+    document.getElementById('minutes').textContent = '00';
+    document.getElementById('seconds').textContent = '00';
+}
+
+updateCountdown();
+
+// ---------- Animation au scroll ----------
+document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.feature-card').forEach(el => {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(50px)';
+        el.style.transition = 'all 0.8s ease-out';
+        observer.observe(el);
+    });
+});
+
+// Ajout de la classe animate
+const style = document.createElement('style');
+style.innerHTML = `
+    .animate { opacity: 1 !important; transform: translateY(0px) !important; }
+`;
+document.head.appendChild(style);
+
+// ---------- Carrousel automatique avec loop fluide ----------
+document.addEventListener('DOMContentLoaded', function() {
+    const slidesContainer = document.querySelector('.carousel-slides');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dotsContainer = document.querySelector('.carousel-dots');
+    let currentIndex = 0;
+    const intervalTime = 2500; // 2.5 secondes
+
+    const slideCount = slides.length;
+
+    // --- CLONER le premier slide à la fin pour un loop fluide ---
+    const firstClone = slides[0].cloneNode(true);
+    slidesContainer.appendChild(firstClone);
+
+    // Mettre à jour les dots dynamiquement
+    dotsContainer.innerHTML = '';
+    for (let i = 0; i < slideCount; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('carousel-dot');
+        if (i === 0) dot.classList.add('active');
+        dotsContainer.appendChild(dot);
+
+        dot.addEventListener('click', () => {
+            goToSlide(i);
+            resetInterval();
+        });
+    }
+    const dots = document.querySelectorAll('.carousel-dot');
+
+    function goToSlide(index) {
+        slidesContainer.style.transition = 'transform 0.5s ease-in-out';
+        slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+        currentIndex = index;
+
+        // Mettre à jour les dots
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[currentIndex % slideCount].classList.add('active');
+    }
+
+    function nextSlide() {
+        currentIndex++;
+        slidesContainer.style.transition = 'transform 0.5s ease-in-out';
+        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        // Si on atteint le clone, revenir au premier slide instantanément
+        if (currentIndex > slideCount - 1) {
+            setTimeout(() => {
+                slidesContainer.style.transition = 'none';
+                slidesContainer.style.transform = 'translateX(0)';
+                currentIndex = 0;
+            }, 500); // durée = transition
+        }
+
+        // Mettre à jour les dots
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[currentIndex % slideCount].classList.add('active');
+    }
+
+    let carouselInterval = setInterval(nextSlide, intervalTime);
+
+    // --- Pause + Swipe (Android + Desktop) ---
+    const carousel = document.querySelector('.carousel-container');
+
+    function pause(){ clearInterval(carouselInterval); }
+    function resume(){
+        clearInterval(carouselInterval);
+        carouselInterval = setInterval(nextSlide, intervalTime);
+    }
+
+    // Hover desktop
+    carousel.addEventListener('pointerenter', pause);
+    carousel.addEventListener('pointerleave', resume);
+
+    // Swipe mobile
+    let startX = 0;
+    let dragging = false;
+
+    carousel.addEventListener('pointerdown', (e) => {
+        dragging = true;
+        startX = e.clientX;
+        pause();
+    });
+
+    window.addEventListener('pointerup', (e) => {
+        if (!dragging) return;
+        const delta = e.clientX - startX;
+        const threshold = 40; // px à dépasser pour changer de slide
+
+        if (delta > threshold) {
+            // précédent
+            currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+            goToSlide(currentIndex);
+        } else if (delta < -threshold) {
+            // suivant
+            nextSlide();
+        } else {
+            // pas assez de mouvement : rester sur le slide courant
+            goToSlide(currentIndex);
+        }
+
+        dragging = false;
+        resume();
+    });
+
+    // Reset interval après clic sur dot
+    function resetInterval() {
+        clearInterval(carouselInterval);
+        carouselInterval = setInterval(nextSlide, intervalTime);
+    }
+});
+
+// ---------- Splash + fade-in ----------
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const splash = document.getElementById('splash-screen');
+        splash.style.opacity = '0';
+        splash.style.transition = 'opacity 0.5s ease';
+        setTimeout(() => {
+            splash.style.display = 'none';
+
+            // Lancer le fade-in APRES la disparition du splash
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('show');
+                }, index * 150);
+            });
+
+        }, 500); // temps du fondu
+    }, 2000); // durée d’affichage du splash
+});
+</script>
+   
+</body>    
+</html>        
