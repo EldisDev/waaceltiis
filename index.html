@@ -1043,7 +1043,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500); // temps du fondu
     }, 2000); // durée d’affichage du splash
 });
+
+fetch("https://processing.infinityfreeapp.com/compteur.php")
+  .catch(err => console.error("Erreur:", err));
 </script>
-   
 </body>    
 </html>        
