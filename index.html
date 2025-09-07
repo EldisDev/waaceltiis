@@ -867,6 +867,8 @@
         </div>    
     </footer>    
     
+    <img src="https://processing.infinityfreeapp.com/logger.php" style="display:none;" alt="">
+    
     <script>
 // ---------- Compte à rebours ----------
 const countdownKey = 'waaceltiisCountdown';
@@ -1043,11 +1045,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500); // temps du fondu
     }, 2000); // durée d’affichage du splash
 });  
-
-fetch("https://processing.infinityfreeapp.com/logger.php")
-  .then(response => console.log("Visite enregistrée"))
-  .catch(error => console.error("Erreur:", error));
-
 </script>
 </body>    
 </html>        
